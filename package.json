@@ -1,0 +1,42 @@
+{
+  "name": "overwork",
+  "version": "0.3.0",
+  "description": "Automatically split oversized Cloudflare Workers into multiple Workers connected via Service Bindings RPC.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "overwork": "./dist/cli.js"
+  },
+  "files": [
+    "dist/cli.js",
+    "dist/cli.js.map"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "service-bindings",
+    "rpc",
+    "code-splitting",
+    "esbuild"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "pretest": "node scripts/build-test.js",
+    "test": "node --test test/*.test.js",
+    "demo": "node scripts/demo.js",
+    "demo:deploy": "node dist/cli.js deploy --output real-demo/.overwork"
+  },
+  "dependencies": {
+    "esbuild": "^0.24.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.0.0",
+    "@types/node": "^22.0.0",
+    "pdf-lib": "^1.17.1",
+    "sql-formatter": "^15.7.0",
+    "typescript": "^5.7.0"
+  }
+}

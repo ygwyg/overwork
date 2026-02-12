@@ -1,0 +1,8 @@
+node_modules/
+dist/
+test/dist/
+.DS_Store
+.overwork/
+.worker-split/
+WRITEUP.md
+*.tgz
