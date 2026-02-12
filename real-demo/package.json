@@ -1,0 +1,13 @@
+{
+  "name": "overwork-real-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@faker-js/faker": "^10.3.0",
+    "marked": "^17.0.2",
+    "pdf-lib": "^1.17.1",
+    "sanitize-html": "^2.17.0",
+    "sql-formatter": "^15.4.0"
+  }
+}
